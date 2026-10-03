@@ -27,3 +27,22 @@ server/createHash.js
 *.docx
 *.pdf
 server/createHash.js
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Virtual environments / caches
+.venv/
+venv/
+__pycache__/
+
+# Test photos and debug crops: real faces, never commit
+face-service/*.jpg
+face-service/*.jpeg
+face-service/*.png
+face-service/crop_*
+
+venv/
+.venv/

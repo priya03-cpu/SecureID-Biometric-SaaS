@@ -1,0 +1,17 @@
+.cam-frame { position: relative; width: 100%; aspect-ratio: 4 / 3; background: #0f172a; border-radius: 12px; overflow: hidden; margin: 12px 0; }
+.cam-video { width: 100%; height: 100%; object-fit: cover; transform: scaleX(-1); } /* mirror preview only */
+.cam-loading { position: absolute; inset: 0; display: grid; place-items: center; color: #cbd5e1; font-size: 14px; }
+.cam-oval { position: absolute; left: 50%; top: 50%; width: 46%; height: 78%; transform: translate(-50%, -50%); border: 3px dashed rgba(255,255,255,.7); border-radius: 50%; pointer-events: none; }
+
+.modal-backdrop { position: fixed; inset: 0; background: rgba(15,23,42,.6); display: grid; place-items: center; padding: 16px; z-index: 50; }
+.modal-card { background: white; border-radius: 16px; padding: 22px 24px; width: 100%; max-width: 480px; max-height: 95vh; overflow-y: auto; }
+.modal-card h2 { margin: 0 0 4px; font-size: 20px; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; }
+
+.thumb-row { display: flex; gap: 8px; margin-top: 10px; }
+.thumb { width: 88px; height: 66px; object-fit: cover; border-radius: 8px; border: 1px solid #e2e8f0; transform: scaleX(-1); }
+
+.consent-row { display: flex; gap: 10px; align-items: flex-start; margin: 14px 0; font-size: 14px; }
+.consent-row input { margin-top: 3px; }
+
+.row-actions { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }

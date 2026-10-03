@@ -1,0 +1,9 @@
+# Tested together on Python 3.12 / Linux. Python 3.11 on Windows is the target.
+deepface==0.0.101
+tensorflow>=2.16,<2.22
+tf-keras>=2.16,<2.22
+# OpenCV 5.x is missing the data files DeepFace needs, so stay on 4.x:
+opencv-python==4.11.0.86
+fastapi>=0.110
+uvicorn>=0.29
+python-dotenv>=1.0
